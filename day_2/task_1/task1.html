@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="task1.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="sidebar">
+             <h1>Sidebar</h1>
+            </div>
+
+            <div class="slide-show-container">
+
+                <div class="mySlides"> 
+                    <img src="images.png" alt="wild-african-cheetah"/>
+                </div>
+                
+                 <div class="mySlides"> 
+                    <img src="Planet9_3840x2160.jpg" alt="mountains wide"/>
+                </div>
+              
+                <div class="mySlides"> 
+                    <img src="red-car-png-free-download_1716463225_1293492404.webp" alt="snow wide"/>
+                </div>
+
+               
+               
+
+                <br/>
+
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              
+               
+            </div>
+            </div>
+            
+
+        </div>
+
+
+        <script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace("active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    </body>
+</html>
