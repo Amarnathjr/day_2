@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery Viewer</title>
+    <link rel="stylesheet" href="task_1.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+    <div class="wrapper">
+       
+        <aside class="nav-panel">
+            <ul class="nav-list">
+                <li class="nav-item"><i class="fa-solid fa-bars"></i><span>Section 1</span></li>
+                <li class="nav-item"><i class="fa-solid fa-bars"></i><span>Section 2</span></li>
+                <li class="nav-item"><i class="fa-solid fa-bars"></i><span>Section 3</span></li>
+                <li class="nav-item"><i class="fa-solid fa-bars"></i><span>Section 4</span></li>
+                <li class="nav-item"><i class="fa-solid fa-bars"></i><span>Section 5</span></li>
+                <li class="nav-item"><i class="fa-solid fa-bars"></i><span>Section 6</span></li>
+                <li class="nav-item"><i class="fa-solid fa-bars"></i><span>Section 7</span></li>
+                <li class="nav-item"><i class="fa-solid fa-bars"></i><span>Section 8</span></li>
+                <li class="nav-item"><i class="fa-solid fa-bars"></i><span>Section 9</span></li>
+                <li class="nav-item"><i class="fa-solid fa-bars"></i><span>Section 10</span></li>
+            </ul>
+        </aside>
+
+       
+        <main class="gallery-container">
+         
+            <div class="slideshow">
+                <div class="slide"><img src="https://thumbs.dreamstime.com/b/wild-african-cheetah-21690999.jpg" class="main-img" alt="Cheetah"></div>
+                <div class="slide"><img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" class="main-img" alt="Mountains"></div>
+                <div class="slide"><img src="https://www.w3schools.com/howto/img_snow_wide.jpg" class="main-img" alt="Snow"></div>
+                <div class="slide"><img src="https://www.w3schools.com/howto/img_nature_wide.jpg" class="main-img" alt="Nature"></div>
+                <div class="slide"><img src="https://images.pexels.com/photos/15143046/pexels-photo-15143046.jpeg" class="main-img" alt="Image 5"></div>
+                <div class="slide"><img src="https://images.pexels.com/photos/3967669/pexels-photo-3967669.jpeg" class="main-img" alt="Image 6"></div>
+                <div class="slide"><img src="https://images.pexels.com/photos/27681652/pexels-photo-27681652.jpeg" class="main-img" alt="Image 7"></div>
+                <div class="slide"><img src="https://images.pexels.com/photos/29996343/pexels-photo-29996343.jpeg" class="main-img" alt="Image 8"></div>
+                <div class="slide"><img src="https://as2.ftcdn.net/jpg/02/46/26/63/1000_F_246266381_0cJ8GoFpISVzHWpBHvLD3gxYQH9tTX5K.jpg" class="main-img" alt="Image 9"></div>
+                <div class="slide"><img src="https://images.pexels.com/photos/12040663/pexels-photo-12040663.jpeg" class="main-img" alt="Image 10"></div>
+                <div class="slide"><img src="https://as2.ftcdn.net/jpg/05/39/94/57/1000_F_539945724_QKDi3ecDu4k2951MfodjvtLLUlUdcpV4.jpg" class="main-img" alt="Image 11"></div>
+            </div>
+
+          
+            <div class="indicators">
+                <span class="indicator" onclick="switchSlide(1)"></span>
+                <span class="indicator" onclick="switchSlide(2)"></span>
+                <span class="indicator" onclick="switchSlide(3)"></span>
+                <span class="indicator" onclick="switchSlide(4)"></span>
+                <span class="indicator" onclick="switchSlide(5)"></span>
+                <span class="indicator" onclick="switchSlide(6)"></span>
+                <span class="indicator" onclick="switchSlide(7)"></span>
+                <span class="indicator" onclick="switchSlide(8)"></span>
+                <span class="indicator" onclick="switchSlide(9)"></span>
+                <span class="indicator" onclick="switchSlide(10)"></span>
+                <span class="indicator" onclick="switchSlide(11)"></span>
+            </div>
+
+          
+            <div class="thumbnail-grid">
+                <img src="https://thumbs.dreamstime.com/b/wild-african-cheetah-21690999.jpg" class="thumbnail" onclick="switchSlide(1)" />
+                <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" class="thumbnail" onclick="switchSlide(2)" />
+                <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" class="thumbnail" onclick="switchSlide(3)" />
+                <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" class="thumbnail" onclick="switchSlide(4)" />
+                <img src="https://images.pexels.com/photos/15143046/pexels-photo-15143046.jpeg" class="thumbnail" onclick="switchSlide(5)" />
+                <img src="https://images.pexels.com/photos/3967669/pexels-photo-3967669.jpeg" class="thumbnail" onclick="switchSlide(6)" />
+                <img src="https://images.pexels.com/photos/27681652/pexels-photo-27681652.jpeg" class="thumbnail" onclick="switchSlide(7)" />
+                <img src="https://images.pexels.com/photos/29996343/pexels-photo-29996343.jpeg" class="thumbnail" onclick="switchSlide(8)" />
+                <img src="https://as2.ftcdn.net/jpg/02/46/26/63/1000_F_246266381_0cJ8GoFpISVzHWpBHvLD3gxYQH9tTX5K.jpg" class="thumbnail" onclick="switchSlide(9)" />
+                <img src="https://images.pexels.com/photos/12040663/pexels-photo-12040663.jpeg" class="thumbnail" onclick="switchSlide(10)" />
+                <img src="https://as2.ftcdn.net/jpg/05/39/94/57/1000_F_539945724_QKDi3ecDu4k2951MfodjvtLLUlUdcpV4.jpg" class="thumbnail" onclick="switchSlide(11)" />
+            </div>
+        </main>
+    </div>
+
+    <script src="task1.js"></script>
+</body>
+</html>
