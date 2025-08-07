@@ -49,5 +49,6 @@ console.log(ans);
 //here we passes city ,town as arugments to the function and call the function by using call method
 
 
-//apply
-//apply method is similar to 
+//apply()
+
+//apply method is similar to the call method but in apply method we have to pass arguments in the form of an array.
